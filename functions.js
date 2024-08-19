@@ -35,6 +35,7 @@ for(let i = 0; i < 13; i++) {
 
     // Construct the image URL based on the class
     let imageUrl = "images/" + card.class + ".png";
+    imageUrl = imageUrl.toLowerCase();
 
     // Set the background image using the constructed URL
     card.style.backgroundImage = "url('" + imageUrl + "')";
